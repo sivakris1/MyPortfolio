@@ -1,0 +1,278 @@
+/* General styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #1a1a2e;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f0f1f;
+  padding: 40px 80px;
+  flex-wrap: wrap;
+}
+
+.nameandlogo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 42px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+}
+
+.profile-img img {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  background: #1a1a2e;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.intro p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.intro a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Services */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+  background: #12122c;
+}
+
+.services h2 {
+  font-size: 32px;
+  color: #ffcc00;
+  margin-bottom: 30px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background: #1f1f3d;
+  width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Works */
+.works {
+  padding: 60px 20px;
+  text-align: center;
+  background: #1a1a2e;
+}
+
+.works h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffcc00;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  width: 280px;
+  background: #292947;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.project-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Blog */
+.blog {
+  padding: 60px 20px;
+  background: #12122c;
+  text-align: center;
+}
+
+.blog h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffcc00;
+}
+
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-card {
+  background: #232343;
+  width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.blog-card h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #0f0f1f;
+  color: #888;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.footer .socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .socials a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer .socials a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nameandlogo {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .profile-img img {
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+}
